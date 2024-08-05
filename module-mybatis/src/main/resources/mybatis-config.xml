@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 引入db.properties文件 -->
+    <properties resource="db.properties"/>
+
+<!--    <typeAliases>-->
+<!--        <typeAlias type="org.example.pojo.User" alias="User" />-->
+<!--    </typeAliases>-->
+
+    <typeAliases>
+        <package name="org.example.pojo"/>
+    </typeAliases>
+    <!-- 配置数据源 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!-- 配置数据库驱动 -->
+                <property name="driver" value="${db.driver}"/>
+                <!-- 配置数据库地址 -->
+                <property name="url" value="${db.url}"/>
+                <!-- 连接数据库所需的用户名 -->
+                <property name="username" value="${db.username}"/>
+                <!-- 连接数据库所需的密码 -->
+                <property name="password" value="${db.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 配置mapper -->
+    <mappers>
+        <!-- 设置mapper的完整路径 -->
+        <mapper resource="org/example/mapper/UserMapper.xml"/>
+    </mappers>
+
+</configuration>
