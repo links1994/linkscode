@@ -6,6 +6,11 @@
     <!-- 引入db.properties文件 -->
     <properties resource="db.properties"/>
 
+    <settings>
+        <!--开启驼峰自动映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
 <!--    <typeAliases>-->
 <!--        <typeAlias type="org.example.pojo.User" alias="User" />-->
 <!--    </typeAliases>-->
