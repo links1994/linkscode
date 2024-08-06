@@ -13,8 +13,10 @@
     <typeAliases>
         <package name="org.example.pojo"/>
     </typeAliases>
+
     <!-- 配置数据源 -->
     <environments default="development">
+        <!-- 配置开发环境数据源 -->
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
@@ -28,12 +30,27 @@
                 <property name="password" value="${db.password}"/>
             </dataSource>
         </environment>
+        <!-- 配置测试环境数据源 -->
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!-- 配置数据库驱动 -->
+                <property name="driver" value="${dbtest.driver}"/>
+                <!-- 配置数据库地址 -->
+                <property name="url" value="${dbtest.url}"/>
+                <!-- 连接数据库所需的用户名 -->
+                <property name="username" value="${dbtest.username}"/>
+                <!-- 连接数据库所需的密码 -->
+                <property name="password" value="${dbtest.password}"/>
+            </dataSource>
+        </environment>
     </environments>
 
     <!-- 配置mapper -->
     <mappers>
-        <!-- 设置mapper的完整路径 -->
-        <mapper resource="org/example/mapper/UserMapper.xml"/>
+<!--        &lt;!&ndash; 设置mapper的完整路径 &ndash;&gt;-->
+<!--        <mapper resource="org/example/mapper/UserMapper.xml"/>-->
+        <package name="org.example.mapper"/>
     </mappers>
 
 </configuration>
