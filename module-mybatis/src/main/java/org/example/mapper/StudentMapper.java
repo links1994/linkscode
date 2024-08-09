@@ -1,7 +1,6 @@
 package org.example.mapper;
 
 import org.example.pojo.Student;
-import org.example.pojo.Teacher;
 
 import java.util.List;
 

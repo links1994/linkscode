@@ -1,10 +1,11 @@
 package org.example;
 
+import org.apache.ibatis.session.SqlSession;
 import org.example.mapper.StudentMapper;
 import org.example.pojo.Student;
 import org.example.util.SqlSessionUtil;
-import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
+
 //Student和Teacher用于演示多对多查询
 public class MyBatisStudentTest {
     // 依据id查询学生方式1
@@ -40,6 +41,5 @@ public class MyBatisStudentTest {
             SqlSessionUtil.closeSqlSession(sqlSession);
         }
     }
-
 
 }

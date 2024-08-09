@@ -10,6 +10,7 @@
     <modules>
         <module>module-jdbc</module>
         <module>module-mybatis</module>
+        <module>module-java</module>
     </modules>
 
     <!-- 依赖管理-->
