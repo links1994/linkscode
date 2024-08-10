@@ -29,6 +29,27 @@
                 <version>3.5.7</version>
             </dependency>
 
+            <!-- mybatis-ehcache依赖 -->
+            <dependency>
+                <groupId>org.mybatis.caches</groupId>
+                <artifactId>mybatis-ehcache</artifactId>
+                <version>1.2.1</version>
+            </dependency>
+
+            <!-- logback-classic依赖 -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+
+            <!-- pagehelper依赖 -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>5.2.0</version>
+            </dependency>
+
             <!-- mysql数据库驱动-->
             <dependency>
                 <groupId>mysql</groupId>

@@ -9,6 +9,8 @@
     <settings>
         <!--开启驼峰自动映射-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 二级缓存 -->
+        <setting name="cacheEnabled" value="true"/>
     </settings>
 
 <!--    <typeAliases>-->
@@ -18,6 +20,10 @@
     <typeAliases>
         <package name="org.example.pojo"/>
     </typeAliases>
+    
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
 
     <!-- 配置数据源 -->
     <environments default="development">

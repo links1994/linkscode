@@ -2,8 +2,8 @@ package org.example;
 
 import org.example.mapper.UserSkillMapper;
 import org.example.pojo.User;
-import org.example.util.SqlSessionUtil;
 import org.apache.ibatis.session.SqlSession;
+import org.example.util.SqlSessionUtil;
 import org.junit.Test;
 
 import java.util.ArrayList;

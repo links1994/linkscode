@@ -2,8 +2,8 @@ package org.example;
 
 import org.example.mapper.EmployeeMapper;
 import org.example.pojo.Employee;
-import org.example.util.SqlSessionUtil;
 import org.apache.ibatis.session.SqlSession;
+import org.example.util.SqlSessionUtil;
 import org.junit.Test;
 //Employee和Department用于演示多对一查询
 public class MyBatisEmployeeTest {

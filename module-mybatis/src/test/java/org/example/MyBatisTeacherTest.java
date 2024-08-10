@@ -3,8 +3,8 @@ package org.example;
 import org.example.mapper.TeacherMapper;
 import org.example.pojo.Student;
 import org.example.pojo.Teacher;
-import org.example.util.SqlSessionUtil;
 import org.apache.ibatis.session.SqlSession;
+import org.example.util.SqlSessionUtil;
 import org.junit.Test;
 
 import java.util.List;

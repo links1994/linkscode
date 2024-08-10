@@ -2,8 +2,8 @@ package org.example;
 
 import org.example.mapper.ProvinceMapper;
 import org.example.pojo.Province;
-import org.example.util.SqlSessionUtil;
 import org.apache.ibatis.session.SqlSession;
+import org.example.util.SqlSessionUtil;
 import org.junit.Test;
 //Province和City用于演示一对多查询
 public class MyBatisProvinceTest {

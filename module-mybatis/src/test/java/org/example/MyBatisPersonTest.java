@@ -2,8 +2,8 @@ package org.example;
 
 import org.example.mapper.PersonMapper;
 import org.example.pojo.Person;
-import org.example.util.SqlSessionUtil;
 import org.apache.ibatis.session.SqlSession;
+import org.example.util.SqlSessionUtil;
 import org.junit.Test;
 //Person和Card用于演示一对一查询
 public class MyBatisPersonTest {
